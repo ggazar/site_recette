@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Gâteau au chocolat</title>
-        <meta charset="UTF-8"><!--balise qui n'a pas de fin : ne prend pas de contenu!
+        <title>Gâteau au chocolat resp design</title>
+        <meta charset="UTF-8"> <!--balise qui n'a pas de fin : ne prend pas de contenu!
         charset est une propriété-->
+        
+        <!--ligne ci-dessous pour passer la page en responsive design-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="recette.css">
+        
     </head>
     <body><!--balise body pour indiquer le corps du texte-->
 
@@ -24,7 +29,7 @@
             </div>
 
             <div class="info"> <!--position est une propriété qui prend par défaut la valeur static. relative permet de venir repositionner un élément par rapport à sa position d'origine. permet aussi aux éléments enfants d'utiliser des positions absolues -->
-                <img class="centre info" src="https://jonathanroux.com/gateau.jpg"> <!--pour régler le pb de taille de l'image, on lui affecte une classe. Cette classe indique le style width: 100%-->
+                <img class="centre info" src="https://jonathanroux.com/gateau.jpg?id=9999"> <!--pour régler le pb de taille de l'image, on lui affecte une classe. Cette classe indique le style width: 100%-->
 
                 <table class="info"> 
                 <!--6C829DC0 : C0 pour l'opacité, FF opacité 100%, 00 opacité 0%, la valeur au milieur c'est 80 -->
@@ -34,7 +39,7 @@
                         <th>Cuisson</th>
                         <th>Temps total</th>
                     </tr>
-                    <tr><td>facile</td>
+                    <tr><td>Facile</td>
                         <td>10 min</td>
                         <td>25 min</td>
                         <td>35 min</td>
@@ -42,7 +47,7 @@
                 </table>
             </div>
 
-            <div>
+            <div> <!--on rajoute une div pour empecher l'overflow visible vers le bas mais mettre en auto-->
                 <div class="colonne1 colonne">
                     <h2>Ingrédients</h2>
                     <div class="ingredients">
@@ -56,9 +61,9 @@
                 <div class="colonne2 colonne">
                     <h2>Préparation</h2>
                     <table class="preparation">
-                        <tr><td><p class="numero">1</p></td><td class="preparation_etape">Faire fondre le chocolat avec le beurre</td>
-                        <tr><td><p class="numero">2</p></td><td class="preparation_etape">Mélanger le sucre, les oeufs et la farine</td>
-                        <tr><td><p class="numero">3</p></td><td class="preparation_etape">Mélanger le tout pour faire une pate</td>
+                        <tr><td><p class="numero">1</p></td><td class="preparation_etape">Faire fondre le chocolat avec le beurre.</td>
+                        <tr><td><p class="numero">2</p></td><td class="preparation_etape">Mélanger le sucre, les oeufs et la farine.</td>
+                        <tr><td><p class="numero">3</p></td><td class="preparation_etape">Mélanger le tout pour faire une pate.</td>
                         <tr><td><p class="numero">4</p></td><td class="preparation_etape">Mettre au four.</td>
                     </table>
                 </div>
